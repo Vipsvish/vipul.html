@@ -1,0 +1,199 @@
+* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;width: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: normal;
+  background-color:white;
+  color:black;
+}
+
+/* Header styles */
+header {
+  background: #d2978adb;
+  color: rgb(48, 8, 248);
+  padding: 1rem 0;
+}
+
+header .container {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: georgian inside url('/media/examples/rocket.svg');
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding:1rem;
+}
+
+nav a:hover {
+  background: rgb(129, 168, 202);
+  border-radius: 10px 100px / 120px;
+}
+
+/* Hero Section */
+.hero {
+  background: #f6f8f8;
+  color: rgb(10, 10, 10);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  background-color: #004d99;
+  color: rgb(10, 1, 1);
+  text-decoration: none;
+  border-radius: 20px; 
+}
+
+.hero .btn:hover {
+  background-color: #003366;
+}
+
+/* Courses Section */
+.section {
+  padding: 50px 0;
+  background-color: rgb(253, 251, 251);
+  margin-bottom: 10px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(248, 50, 50, 0.1);
+  flex: 1;
+}
+
+.course h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.course .btn {
+  background: #0066cc;
+  color: rgb(6, 1, 1);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.course .btn:hover {
+  background: #004d99;
+}
+
+/* Testimonials Section */
+.testimonial-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.testimonial {
+  background: #e01f1f;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(189, 88, 154, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+form {
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 4rem;
+  border: 4px solid rgb(11, 11, 11);
+  border-radius: 8px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #80f78c;
+  color:black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  <background-color:white></background-color:white>;
+}
+
+/* Footer styles */
+footer {
+  background: #3dda43a4;
+  color:black;
+  padding:  ;
+  text-align: center;
+}
+
+footer p {
+  margin: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) 
+  header .container {
+    flex-direction: column;}

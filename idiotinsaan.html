@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+
+<script src="index.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Web Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div class="container">
+        <h2>Welcome to My Web Page</h2>
+        <p>This is a responsive layout designed using modern HTML and CSS techniques.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers working to create beautiful and functional websites.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>SEO Optimization</li>
+          <li>Branding</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Web Page. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background: #0066cc;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background: #004d99;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: #00bfae;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  background-color: #004d99;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.hero .btn:hover {
+  background-color: #003366;
+}
+
+/* Courses Section */
+.section {
+  padding: 50px 0;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.course h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.course p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.course .btn {
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.course .btn:hover {
+  background: #004d99;
+}
+
+/* Testimonials Section */
+.testimonial-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.testimonial {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  <background-color:r>yellow</background-color:r>;
+}
+
+/* Footer styles */
+footer {
+  background: #0066cc;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+
